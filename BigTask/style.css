@@ -5,28 +5,39 @@
 body{
 	margin: 0;
 	padding: 0;
-	/*background: url(result/3.jpg);*/
+	/*background: url(result/3.jpg);
 	background-size:100%; 
-	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: 0;
+	background-repeat: no-repeat;*/
+}
+p, h1, h2, h3{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+h1, h2, h3{
+	font-size: 69px;
+	font-weight: bold;
 }
 .field {
+	padding-left: 5px;
 	width: 1224px;
 	margin-left: auto;
 	margin-right: auto;
     margin-top: 83px;
     height: 1720px;
 }
-.block-left, .block-right{
+.block{
 	height: inherit;
-}
-.block-right{
-	float: right;
-}
-.block-left{
 	float: left;
+}
+
+.block.left{
 	width: 43.5%;
 }
-.block-right{
+.block.right{
 	width: 56.5%;
 }
 .block-circle{
@@ -43,7 +54,7 @@ body{
 .block-circle .circle{
 	height: 250px;
 	width: 250px;
-	border: 1px solid rgb(61,100,176);a
+	border: 1px solid rgb(61,100,176);
 }
 .block-circle .circle.white{
 	margin-top: 12px;
@@ -75,23 +86,22 @@ body{
 }
 
 .block-info{
-	font-size: 69px;
-	font-weight: bold;
 	margin-left: 82px;
     margin-bottom: 79px;
 }
-.block-info :nth-child(1){
+.block-info h1{
 	letter-spacing: -3px;
 	height: 56px;
 	font-size: 66px;
 	margin-right: 37px;	
 	font-weight: 100;
 }
-.block-info :nth-child(2){
+
+.block-info h2{
 	letter-spacing: -1px;
 	height: 81px;
 }
-.block-info :nth-child(3){
+.block-info h3{
 	letter-spacing: 1px;
 	font-size: 24px;
 	padding-left: 38px;
@@ -171,13 +181,13 @@ body{
 	width: 212px;
 }
 .education.section .line{
-	width: 337px;
+	width: 270px;
 }
 .experience.section .line{
-	width: 337px;
+	width: 260px;
 }
 .softwares.section .line{
-	width: 337px;
+	width: 285px;
 }
 
 .education.section .tittle{
@@ -200,7 +210,7 @@ label{
 	font-size: 23px;
 	display: inline-block;
 }
-.section .body{
+.section .content{
 	padding-top: 7px;
 }
 .section.contact {
@@ -230,7 +240,7 @@ label{
 	padding-top: 2px;
 }
 .section .degree {
-	margin-bottom: 15px;
+	margin-bottom: 14.7px;
     margin-left: 15px;
 }
 .degree .circle{
@@ -263,13 +273,13 @@ label{
 	color:black;
 }
 .experience.section .header{
-	margin-bottom: 26px;
+	margin-bottom: 29px;
 }
 .degree .name{
 	font-size: 26px;
 }
 .softwares.section{
-	padding-top: 10px;
+	padding-top: 8px;
 	font-size: 28px;
 }
 .softwares.section .tittle{
@@ -291,7 +301,7 @@ label{
 }
 
 .experience.section{
-	padding-top: 13px;
+	padding-top: 11px;
 }
 .level{
 	height: 24px;
@@ -306,7 +316,7 @@ label{
 	display: inline-block;
 }
 
-.software .level .no_success {
+.software .level .nosuccess {
 	width: 50%;
 	height: inherit;
 	background: rgb(230,230,230);
@@ -317,39 +327,39 @@ label{
 .space{
 	width: 76px;
 }
-#photoshop_success{
+.photoshop .level .success{
 	width: 90%;
 }
-#photoshop_nosuccess{
+.photoshop .level .nosuccess{
 	width: 10%;
 }
-#dreamweaver_success{
+.dreamweaver .level .success{
 	width: 80%;
 }
-#dreamweaver_nosuccess{
+.dreamweaver .level .nosuccess{
 	width: 20%;
 }
-#illustr_success{
+.illustr .level .success{
 	width: 70%;
 }
-#illustr_nosuccess{
+.illustr .level .nosuccess{
 	width: 30%;
 }
-#eff_success{
+.eff .level .success{
 	width: 60%;
 }
-#eff_nosuccess{
+.eff .level .nosuccess{
 	width: 40%;
 }
-#html_success{
+.html .level .success{
 	width: 89%;
 }
-#html_nosuccess{
+.html .level .nosuccess{
 	width: 11%;
 }
-#indes_success{
+.indes .level .success{
 	width: 56%;
 }
-#indes_nosuccess{
+.indes .level .nosuccess{
 	width: 44%;
 }
