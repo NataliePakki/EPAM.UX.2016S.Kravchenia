@@ -1,0 +1,328 @@
+
+@general_color: rgb(61,100,176);
+@gray: rgb(230,230,230);
+@footer_color: rgb(91,91,91);
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Myriad Pro";
+}
+p, h1, h2, h3, ul, li{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	 margin: 0;
+}
+ul{
+	list-style-image: url(icons/circle.png);
+	-webkit-margin-start: -15px;
+}
+#footer{
+	color: @footer_color;
+	margin-left: 25%;
+	font-size: 30px;
+    font-weight: 900;
+	
+}
+#footer p, #footer a, #footer .icon{
+	display: inline-block;
+}
+
+#footer a{
+	color: @footer_color;
+	cursor: pointer;
+	font-size: 45px;
+}
+#footer .icon{
+	display: inline-block;
+	height: 68px;
+	width: 87px;
+	background: url(icons/robot.png);
+}
+h1, h2, h3{
+	font-size: 69px;
+	font-weight: bold;
+}
+.container-fluid {
+	padding-left: 5px;
+	width: 1457px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 83px;
+}
+
+.block-left{
+	padding-right: 70px;
+}
+.block-circle{
+	height: 280px;
+}
+.circle{
+	border-radius: 50%;
+}
+.education.section .header{
+	margin-bottom: 12px;
+}
+
+.block-circle .circle{
+	height: 250px;
+	width: 250px;
+	border: 1px solid @general_color
+}
+.block-circle .circle.white{
+	margin-top: 12px;
+   margin-left: auto;
+   margin-right: auto;
+   background: white;
+	
+}
+.block-circle .circle.blue{
+	width: 220px;
+	height: 220px; 
+	margin-left: 14px;
+    margin-top: 14px;
+	background: @general_color;
+}
+
+.rating .circle{
+	display:inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 5px auto;
+	margin-right: 6px;
+}
+.rating .circle.blue{
+	background: @general_color;
+}
+
+
+.rating .circle.gray {
+	background: @gray
+}
+
+
+.block-info{
+	text-align: center;
+    margin-bottom: 79px;
+}
+.block-info h1{
+	letter-spacing: -3px;
+	height: 56px;
+	font-size: 66px;
+	font-weight: 100;
+}
+
+.block-info h2{
+	letter-spacing: -1px;
+	height: 81px;
+}
+.block-info h3{
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+.section{
+	margin-bottom: 48px;
+}
+.block-right .section{
+	margin-right: 6px;
+}
+.profile.section .title::before{	
+	background: url(icons/profile-icon.jpg);
+}
+.contact.section .title::before{
+	background: url(icons/contact-icon.jpg);
+}
+.skills.section .title::before{
+	background: url(icons/skills-icon.jpg);
+}
+.education.section .title::before {
+	background: url(icons/education-icon.jpg);
+}
+.experience.section .title::before{
+    margin-right: 8px;
+    background: url(icons/experience-icon.jpg);
+}
+.softwares.section .title::before{
+	background: url(icons/software-icon.jpg);
+
+}
+.section .header .title::before{
+	content: "";
+	display: inline-block;
+	margin-right: 7px;
+	height: 82px;
+	width: 82px;
+	float: left;
+	border-radius: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.section .header .title{
+	display: inline-block;
+    font-weight: bold;
+    margin-top: 18px;
+    letter-spacing: 1px;
+}
+.section .header .title {
+	color: @general_color;
+	font-size: 43px;
+}
+.text {
+	letter-spacing: 0px;
+    font-size: 17px;
+    word-spacing: 0px;
+}
+.title:after {
+    content:"";
+    display: inline-block;
+    height: 33px;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 3px;
+    border-top: 4px solid rgb(61,108,176);
+   clear: both;
+}
+.contact{
+	margin-top: 23px;
+    margin-bottom: 31px;
+}
+label{
+	font-size: 22px;
+	font-weight: bold;
+	display: inline-block;
+	color: @general_color;
+}
+
+.contact .text{
+	font-size: 23px;
+	display: inline-block;
+}
+.section .content{
+	padding-top: 7px;
+}
+.section.contact {
+	margin-bottom: 50px;
+}
+.skill{
+	text-align: center;
+	margin-bottom: 13px;
+}
+.skill .name{
+	font-size: 28px;
+	margin-top: 10px;
+}
+
+.degree .name,.degree .time,.degree .circle{
+	letter-spacing: 1px;
+	display: inline-block;
+}
+.degree .time{
+	color: black;
+	font-weight: 100;
+	
+}
+.degree .info {
+	margin-left: 43px;
+	margin-bottom: -5px;
+
+}
+
+.degree .place {
+	font-size: 28px;
+	padding-top: 2px;
+}
+.section .degree {
+	margin-bottom: 14.7px;
+    margin-left: 15px;
+}
+.degree .circle{
+	margin-top: 10px;
+	background: black;
+	width: 20px;
+	height:20px;
+	float:left;
+}
+.degree .time{
+	word-spacing: -1px;
+    font-size: 29px;
+    letter-spacing: 0px;
+}
+.degree .text{
+	padding-top: 7px;
+}
+.software-table{
+	display: table;
+	width: 100%;
+	margin-left: 9px;
+}
+
+.job.degree .name{
+	padding: 1px;
+}
+.job.degree .name,.job.degree .time{
+	color:black;
+}
+.experience.section .header{
+	margin-bottom: 29px;
+}
+.degree .name{
+	font-size: 26px;
+}
+.softwares.section{
+	padding-top: 8px;
+	font-size: 28px;
+}
+.job.degree .info{
+	padding-top: 1px;
+}
+.software{
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+.experience.section .time{
+	padding-left: 12px;
+}
+
+.experience.section{
+	padding-top: 11px;
+}
+.level{
+	height: 24px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	background: @gray;
+}
+
+.software .level .success {
+	width: 48%;
+	height: inherit;
+	background: @general_color;
+	display: inline-block;
+}
+
+
+
+.photoshop .level .success{
+	width: 90%;
+}
+.dreamweaver .level .success{
+	width: 80%;
+}
+.illustr .level .success{
+	width: 70%;
+}
+.eff .level .success{
+	width: 60%;
+}
+.html .level .success{
+	width: 89%;
+}
+.indes .level .success{
+	width: 56%;
+}
