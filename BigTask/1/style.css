@@ -5,17 +5,14 @@
 body{
 	margin: 0;
 	padding: 0;
-	/*background: url(result/3.jpg);
-	background-size:100%; 
-	background-position: center;
-	background-position-y: 0;
-	background-repeat: no-repeat;*/
+
 }
 p, h1, h2, h3, ul, li{
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+	margin: 0;
 }
 ul{
 	list-style-image: url(icons/circle.png);
@@ -48,7 +45,7 @@ h1, h2, h3{
 }
 .field {
 	padding-left: 5px;
-	width: 1224px;
+	width: 1457px;
 	margin-left: auto;
 	margin-right: auto;
     margin-top: 83px;
@@ -138,27 +135,27 @@ h1, h2, h3{
 .block-right .section{
 	margin-right: 6px;
 }
-.profile.section .tittle::before{	
+.profile.section .title::before{	
 	background: url(icons/profile-icon.jpg);
 }
-.contact.section .tittle::before{
+.contact.section .title::before{
 	background: url(icons/contact-icon.jpg);
 }
-.skills.section .tittle::before{
+.skills.section .title::before{
 	background: url(icons/skills-icon.jpg);
 }
-.education.section .tittle::before {
+.education.section .title::before {
 	background: url(icons/education-icon.jpg);
 }
-.experience.section .tittle::before{
+.experience.section .title::before{
     margin-right: 8px;
     background: url(icons/experience-icon.jpg);
 }
-.softwares.section .tittle::before{
+.softwares.section .title::before{
 	background: url(icons/software-icon.jpg);
 
 }
-.section .header .tittle::before{
+.section .header .title::before{
 	content: "";
 	display: inline-block;
 	margin-right: 7px;
@@ -169,63 +166,39 @@ h1, h2, h3{
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-.section .header .tittle p{
+.section .header .title p{
 	padding-top: 17px;
 }
-.section .header .tittle{
+.section .header .title{
 	display: inline-block;
     font-weight: bold;
-	width: 100%;
-/*    position: absolute;*/
     margin-top: 18px;
     letter-spacing: 1px;
 }
-.section .header .tittle {
+.section .header .title {
 	color:rgb(61,100,176);
 	font-size: 43px;
-/*	margin-left: 10px;*/
 }
 .text {
 	letter-spacing: 0px;
-/*    line-height: 20px;*/
     font-size: 17px;
     word-spacing: 0px;
 }
-.tittle::after {
-	content: "";
-	float: right;
-	width: 45%;
-	height: inherit;
-}
-.tittle::after {
-	display: inline-block;
-	background: rgb(61,108,176);
-	height: 6px;
+
+.title:after {
+    content:"";
+    display: inline-block;
+    height: 33px;
+    vertical-align: bottom;
     width: 100%;
-/*    margin-top: 32px;*/
-}
-.profile.section .tittle::after{
-	width: 182px;
-}
-.contact.section .tittle::after{
-	width: 160px;
-}
-.skills.section .tittle::after{
-	width: 212px;
-}
-.education.section .tittle::after{
-	width: 270px;
-}
-.experience.section .tittle::after{
-	width: 260px;
-}
-.softwares.section .tittle::after{
-	width: 285px;
+    margin-right: -100%;
+    margin-left: 3px;
+    border-top: 4px solid rgb(61,108,176);
+   clear: both;
 }
 
-.education.section .tittle{
-/*	margin-left: 20px;*/
-}
+
+
 .contact{
 	margin-top: 23px;
     margin-bottom: 31px;
@@ -320,9 +293,7 @@ label{
 	padding-top: 8px;
 	font-size: 28px;
 }
-.softwares.section .tittle{
-/*	margin-left: 20px;*/
-}
+
 .job.degree .info{
 	padding-top: 1px;
 }
