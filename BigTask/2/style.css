@@ -1,0 +1,385 @@
+
+*{
+	font-family: "Myriad Pro";
+}
+.block {
+	width: 50%;
+	/*display: inline-block;*/
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	/*background: url(result/3.jpg);
+	background-size:100%; 
+	background-position: center;
+	background-position-y: 0;
+	background-repeat: no-repeat;*/
+}
+p, h1, h2, h3, ul, li{
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+ul{
+	list-style-image: url(icons/circle.png);
+	-webkit-margin-start: -15px;
+}
+
+h1, h2, h3{
+	font-size: 69px;
+	font-weight: bold;
+}
+.field {
+	overflow: auto;
+    padding-left: 5px;
+    width: 1300px;
+    margin-top: 83px;
+    /*height: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.block{
+	/*height: inherit;*/
+	float: left;
+}
+
+/*.block.left{
+	width: 43.5%;
+}
+.block.right{
+	width: 56.5%;
+}*/
+.block-circle{
+	width: 100%;
+	height: 280px;
+}
+.circle{
+	border-radius: 50%;
+}
+.education.section .header{
+	margin-bottom: 12px;
+}
+
+.block-circle .circle{
+	height: 250px;
+	width: 250px;
+	border: 1px solid rgb(61,100,176);
+}
+.block-circle .circle.white{
+	margin-top: 12px;
+    margin-left: 109px;
+	
+}
+.block-circle .circle.blue{
+	width: 220px;
+	height: 220px; 
+	margin-left: 14px;
+    margin-top: 14px;
+}
+
+.rating .circle{
+	display:inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 5px auto;
+	margin-right: 6px;
+}
+.white{
+	background: white;
+}
+.gray {
+	background: rgb(230,230,230);
+}
+.blue{
+	background: rgb(61,108,176);
+}
+
+.block-info{
+	margin-left: 82px;
+    margin-bottom: 79px;
+}
+.block-info h1{
+	letter-spacing: -3px;
+	height: 56px;
+	font-size: 66px;
+	margin-right: 37px;	
+	font-weight: 100;
+}
+
+.block-info h2{
+	letter-spacing: -1px;
+	height: 81px;
+}
+.block-info h3{
+	letter-spacing: 1px;
+	font-size: 24px;
+	padding-left: 38px;
+}
+.section{
+	margin-right: 77px;
+	margin-bottom: 48px;
+}
+.block-right .section{
+	margin-right: 6px;
+}
+.profile.section .tittle::before{	
+	background: url(icons/profile-icon.jpg);
+}
+.contact.section .tittle::before{
+	background: url(icons/contact-icon.jpg);
+}
+.skills.section .tittle::before{
+	background: url(icons/skills-icon.jpg);
+}
+.education.section .tittle::before {
+	background: url(icons/education-icon.jpg);
+}
+.experience.section .tittle::before{
+    margin-right: 8px;
+    background: url(icons/experience-icon.jpg);
+}
+.softwares.section .tittle::before{
+	background: url(icons/software-icon.jpg);
+
+}
+.section .header .tittle::before{
+	content: "";
+	margin-right: 7px;
+	display: inline-block;
+	float: left;
+	height: 82px;
+	width: 82px;
+	border-radius: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.section .header .tittle{
+	display: inline-block;
+    font-weight: bold;
+	width: 100%;
+/*    position: absolute;*/
+    margin-top: 18px;
+    letter-spacing: 1px;
+}
+.section .header .tittle p{
+	padding-top: 17px;
+}
+.section .header .tittle {
+	color:rgb(61,100,176);
+	font-size: 43px;
+/*	margin-left: 10px;*/
+}
+.text {
+	letter-spacing: 0px;
+/*    line-height: 20px;*/
+    font-size: 17px;
+    word-spacing: 0px;
+}
+.tittle::after {
+	content: "";
+	float: right;
+	width: 100%;
+	height: 6px;
+}
+.tittle::after {
+	display: inline-block;
+	background: rgb(61,108,176);
+    width: 100%;
+/*    margin-top: 32px;*/
+}
+.profile.section .tittle::after{
+	width: 306px;
+}
+.contact.section .tittle::after{
+	width: 283px;
+}
+.skills.section .tittle::after{
+	width: 336px;
+}
+.education.section .tittle::after{
+	width: 226px;
+}
+.experience.section .tittle::after{
+	width: 222px;
+}
+.softwares.section .tittle::after{
+	width: 243px;
+}
+
+.education.section .tittle{
+	margin-left: 20px;
+}
+.contact{
+	margin-top: 23px;
+    margin-bottom: 31px;
+}
+label{
+	font-size: 22px;
+	font-weight: bold;
+	display: inline-block;
+	color: rgb(61,108,176);
+}
+.contact label {
+	width: 136px;
+}
+.contact .text{
+	font-size: 23px;
+	display: inline-block;
+}
+.section .content{
+	padding-top: 7px;
+}
+.section.contact {
+	margin-bottom: 50px;
+}
+.skill{
+	text-align: center;
+	margin-bottom: 13px;
+}
+.skill .name{
+	font-size: 28px;
+	margin-top: 10px;
+}
+
+.degree .name,.degree .time,.degree .circle{
+	letter-spacing: 1px;
+	display: inline-block;
+}
+.degree .time{
+	color: black;
+	font-weight: 100;
+}
+.degree .info {
+	margin-left: 43px;
+	margin-bottom: -5px;
+
+}
+
+.degree .place {
+	font-size: 28px;
+	padding-top: 2px;
+}
+.section .degree {
+	margin-bottom: 14.7px;
+    margin-left: 15px;
+}
+.degree .circle{
+	margin-top: 10px;
+	background: black;
+	width: 20px;
+	height:20px;
+	float:left;
+}
+.degree .time{
+	word-spacing: -1px;
+    font-size: 29px;
+    letter-spacing: 0px;
+}
+.degree .text{
+	padding-top: 7px;
+}
+.software-table{
+	display: table;
+	width: 100%;
+	margin-left: 9px;
+}
+.row {
+	display: table-row;
+}
+.job.degree .name{
+	padding: 1px;
+}
+.job.degree .name,.job.degree .time{
+	color:black;
+}
+.experience.section .header{
+	margin-bottom: 29px;
+}
+.degree .name{
+	font-size: 26px;
+}
+.softwares.section{
+	padding-top: 8px;
+	font-size: 28px;
+}
+.softwares.section .tittle{
+	margin-left: 20px;
+}
+.job.degree .info{
+	padding-top: 1px;
+}
+.software{
+	display: table-cell;
+	width: 50%;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+.experience.section .time{
+	padding-left: 12px;
+}
+
+.experience.section{
+	padding-top: 11px;
+}
+.level{
+	height: 24px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	background: rgb(230,230,230);
+}
+
+.software .level .success {
+	width: 48%;
+	height: inherit;
+	background: rgb(61,108,176);
+	display: inline-block;
+}
+
+
+.space{
+	width: 76px;
+}
+.photoshop .level .success{
+	width: 90%;
+}
+.dreamweaver .level .success{
+	width: 80%;
+}
+.illustr .level .success{
+	width: 70%;
+}
+.eff .level .success{
+	width: 60%;
+}
+.html .level .success{
+	width: 89%;
+}
+.indes .level .success{
+	width: 56%;
+}
+#footer{
+	display: inline-block; 
+	color: rgb(91,91,91);
+	margin-left: 25%;
+	font-size: 30px;
+    font-weight: 900;
+	
+}
+#footer p, #footer a, #footer .icon{
+	display: inline-block;
+}
+
+#footer a{
+	font-size: 45px;
+	cursor: pointer;
+}
+#footer .icon{
+	display: inline-block;
+	height: 68px;
+	width: 87px;
+	background: url(icons/robot.png);
+}

@@ -11,11 +11,36 @@ body{
 	background-position-y: 0;
 	background-repeat: no-repeat;*/
 }
-p, h1, h2, h3{
+p, h1, h2, h3, ul, li{
 	-webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+}
+ul{
+	list-style-image: url(icons/circle.png);
+	-webkit-margin-start: -15px;
+}
+#footer{
+	color: rgb(91,91,91);
+	margin-left: 25%;
+	font-size: 30px;
+    font-weight: 900;
+	
+}
+#footer p, #footer a, #footer .icon{
+	display: inline-block;
+}
+
+#footer a{
+	cursor: pointer;
+	font-size: 45px;
+}
+#footer .icon{
+	display: inline-block;
+	height: 68px;
+	width: 87px;
+	background: url(icons/robot.png);
 }
 h1, h2, h3{
 	font-size: 69px;
@@ -27,7 +52,7 @@ h1, h2, h3{
 	margin-left: auto;
 	margin-right: auto;
     margin-top: 83px;
-    height: 1720px;
+    height: 100%;
 }
 .block{
 	height: inherit;
@@ -113,85 +138,93 @@ h1, h2, h3{
 .block-right .section{
 	margin-right: 6px;
 }
-.profile.section .icon{	
+.profile.section .tittle::before{	
 	background: url(icons/profile-icon.jpg);
 }
-.contact.section .icon{
+.contact.section .tittle::before{
 	background: url(icons/contact-icon.jpg);
 }
-.skills.section .icon{
+.skills.section .tittle::before{
 	background: url(icons/skills-icon.jpg);
 }
-.education.section .icon {
+.education.section .tittle::before {
 	background: url(icons/education-icon.jpg);
 }
-.experience.section .icon{
+.experience.section .tittle::before{
     margin-right: 8px;
     background: url(icons/experience-icon.jpg);
 }
-.softwares.section .icon{
+.softwares.section .tittle::before{
 	background: url(icons/software-icon.jpg);
 
 }
-.section .header .icon{
+.section .header .tittle::before{
+	content: "";
 	display: inline-block;
+	margin-right: 7px;
 	height: 82px;
 	width: 82px;
+	float: left;
 	border-radius: 50%;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
+.section .header .tittle p{
+	padding-top: 17px;
+}
 .section .header .tittle{
 	display: inline-block;
     font-weight: bold;
-    position: absolute;
+	width: 100%;
+/*    position: absolute;*/
     margin-top: 18px;
     letter-spacing: 1px;
 }
 .section .header .tittle {
 	color:rgb(61,100,176);
 	font-size: 43px;
-	margin-left: 10px;
+/*	margin-left: 10px;*/
 }
 .text {
 	letter-spacing: 0px;
-    line-height: 20px;
+/*    line-height: 20px;*/
     font-size: 17px;
     word-spacing: 0px;
 }
-.line {
+.tittle::after {
+	content: "";
 	float: right;
 	width: 45%;
 	height: inherit;
 }
-.line hr{
+.tittle::after {
 	display: inline-block;
 	background: rgb(61,108,176);
 	height: 6px;
     width: 100%;
-    margin-top: 32px;
+/*    margin-top: 32px;*/
 }
-.profile.section .line{
+.profile.section .tittle::after{
 	width: 182px;
 }
-.contact.section .line{
+.contact.section .tittle::after{
 	width: 160px;
 }
-.skills.section .line{
+.skills.section .tittle::after{
 	width: 212px;
 }
-.education.section .line{
+.education.section .tittle::after{
 	width: 270px;
 }
-.experience.section .line{
+.experience.section .tittle::after{
 	width: 260px;
 }
-.softwares.section .line{
+.softwares.section .tittle::after{
 	width: 285px;
 }
 
 .education.section .tittle{
-	margin-left: 20px;
+/*	margin-left: 20px;*/
 }
 .contact{
 	margin-top: 23px;
@@ -228,6 +261,11 @@ label{
 .degree .name,.degree .time,.degree .circle{
 	letter-spacing: 1px;
 	display: inline-block;
+}
+.degree .time{
+	color: black;
+	font-weight: 100;
+	
 }
 .degree .info {
 	margin-left: 43px;
@@ -283,7 +321,7 @@ label{
 	font-size: 28px;
 }
 .softwares.section .tittle{
-	margin-left: 20px;
+/*	margin-left: 20px;*/
 }
 .job.degree .info{
 	padding-top: 1px;
@@ -307,6 +345,7 @@ label{
 	height: 24px;
 	margin-top: 10px;
 	margin-bottom: 7px;
+	background: rgb(230,230,230);
 }
 
 .software .level .success {
@@ -316,13 +355,6 @@ label{
 	display: inline-block;
 }
 
-.software .level .nosuccess {
-	width: 50%;
-	height: inherit;
-	background: rgb(230,230,230);
-	display: inline-block;
-	margin-left: -6px;
-}
 
 .space{
 	width: 76px;
@@ -330,36 +362,18 @@ label{
 .photoshop .level .success{
 	width: 90%;
 }
-.photoshop .level .nosuccess{
-	width: 10%;
-}
 .dreamweaver .level .success{
 	width: 80%;
-}
-.dreamweaver .level .nosuccess{
-	width: 20%;
 }
 .illustr .level .success{
 	width: 70%;
 }
-.illustr .level .nosuccess{
-	width: 30%;
-}
 .eff .level .success{
 	width: 60%;
-}
-.eff .level .nosuccess{
-	width: 40%;
 }
 .html .level .success{
 	width: 89%;
 }
-.html .level .nosuccess{
-	width: 11%;
-}
 .indes .level .success{
 	width: 56%;
-}
-.indes .level .nosuccess{
-	width: 44%;
 }
