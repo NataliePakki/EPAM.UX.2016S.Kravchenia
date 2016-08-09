@@ -359,8 +359,10 @@ label{
 }
 
 #footer a{
-	font-size: 45px;
+	color: rgb(91,91,91);
 	cursor: pointer;
+	font-size: 45px;
+	text-decoration: none;
 }
 #footer .icon{
 	display: inline-block;
