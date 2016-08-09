@@ -20,9 +20,9 @@ ul{
 }
 #footer{
 	color: rgb(91,91,91);
-	margin-left: 25%;
 	font-size: 30px;
     font-weight: 900;
+	text-align: center;
 	
 }
 #footer p, #footer a, #footer .icon{
