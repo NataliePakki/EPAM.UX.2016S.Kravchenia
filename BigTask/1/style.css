@@ -188,7 +188,7 @@ h1, h2, h3{
 .title:after {
     content:"";
     display: inline-block;
-    height: 33px;
+    height: 26px;
     vertical-align: bottom;
     width: 100%;
     margin-right: -100%;
@@ -197,7 +197,24 @@ h1, h2, h3{
    clear: both;
 }
 
-
+.profile.section .title:after{
+	width:288px;
+}
+.contact.section .title:after{
+	width:265px;
+}
+.skills.section .title:after{
+	width:319px;
+}
+.education.section .title:after{
+	width:403px;
+}
+.experience.section .title:after{
+	width:398px;
+}
+.softwares.section .title:after{
+	width:420px;
+}
 
 .contact{
 	margin-top: 23px;

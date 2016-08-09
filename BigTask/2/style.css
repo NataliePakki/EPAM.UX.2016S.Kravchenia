@@ -16,6 +16,7 @@ p, h1, h2, h3, ul, li{
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+	margin: 0;
 }
 ul{
 	list-style-image: url(icons/circle.png);
@@ -149,9 +150,7 @@ h1, h2, h3{
     margin-top: 18px;
     letter-spacing: 1px;
 }
-.section .header .title p{
-	padding-top: 17px;
-}
+
 .section .header .title {
 	color:rgb(61,100,176);
 	font-size: 43px;
@@ -169,7 +168,24 @@ h1, h2, h3{
    clear: both;
 }
 
-
+.profile.section .title:after{
+	width:326px;
+}
+.contact.section .title:after{
+	width:304px;
+}
+.skills.section .title:after{
+	width:354px;
+}
+.education.section .title:after{
+	width:253px;
+}
+.experience.section .title:after{
+	width:248px;
+}
+.softwares.section .title:after{
+	width:247px;
+}
 .text {
 	letter-spacing: 0px;
     font-size: 17px;
