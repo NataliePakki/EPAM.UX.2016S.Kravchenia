@@ -2,11 +2,12 @@
 @general_color: rgb(61,100,176);
 @gray: rgb(230,230,230);
 @footer_color: rgb(91,91,91);
+@font: "Myriad Pro", Arial;
 
 body{
 	margin: 0;
 	padding: 0;
-	font-family: "Myriad Pro";
+	font-family: @font;
 }
 p, h1, h2, h3, ul, li{
 	-webkit-margin-before: 0em;
@@ -24,42 +25,63 @@ ul{
 	text-align: center;
 	font-size: 30px;
     font-weight: 900;
-	
-}
-#footer p, #footer a, #footer .icon{
-	display: inline-block;
-}
-
-#footer a{
-	color: @footer_color;
-	cursor: pointer;
-	font-size: 45px;
-	text-decoration: none;
-}
-#footer .icon{
+	.icon{
 	display: inline-block;
 	height: 68px;
 	width: 87px;
 	background: url(icons/robot.png);
+	}
+	a{
+	color: @footer_color;
+	cursor: pointer;
+	font-size: 45px;
+	text-decoration: none;
+	}
 }
+	
+
+#footer p, #footer a, #footer .icon{
+	display: inline-block;
+}
+
+
 h1, h2, h3{
 	font-size: 69px;
 	font-weight: bold;
 }
+
 .container-fluid {
 	padding-left: 5px;
 	width: 1457px;
 	margin-left: auto;
 	margin-right: auto;
     margin-top: 83px;
+	.block-left{
+	padding-right: 70px;
+	.block-circle{
+	height: 280px;
+	 .circle{
+	height: 250px;
+	width: 250px;
+	border: 1px solid @general_color
+	}
+	.circle.white{
+	margin-top: 12px;
+   margin-left: auto;
+   margin-right: auto;
+   background: white;
+   }
+	.circle.blue{
+	width: 220px;
+	height: 220px; 
+	margin-left: 14px;
+    margin-top: 14px;
+	background: @general_color;
+}
+	}
+	}
 }
 
-.block-left{
-	padding-right: 70px;
-}
-.block-circle{
-	height: 280px;
-}
 .circle{
 	border-radius: 50%;
 }
@@ -67,62 +89,42 @@ h1, h2, h3{
 	margin-bottom: 12px;
 }
 
-.block-circle .circle{
-	height: 250px;
-	width: 250px;
-	border: 1px solid @general_color
-}
-.block-circle .circle.white{
-	margin-top: 12px;
-   margin-left: auto;
-   margin-right: auto;
-   background: white;
-	
-}
-.block-circle .circle.blue{
-	width: 220px;
-	height: 220px; 
-	margin-left: 14px;
-    margin-top: 14px;
-	background: @general_color;
-}
-
-.rating .circle{
+.rating{
+ .circle{
 	display:inline-block;
 	height: 20px;
 	width: 20px;
 	margin: 5px auto;
 	margin-right: 6px;
-}
-.rating .circle.blue{
+ }
+	.circle.blue{
 	background: @general_color;
 }
-
-
-.rating .circle.gray {
+ .circle.gray {
 	background: @gray
 }
-
+}
 
 .block-info{
 	text-align: center;
     margin-bottom: 79px;
-}
-.block-info h1{
+	 h1{
 	letter-spacing: -3px;
 	height: 56px;
 	font-size: 66px;
 	font-weight: 100;
-}
-
-.block-info h2{
+	 }
+	h2{
 	letter-spacing: -1px;
 	height: 81px;
-}
-.block-info h3{
+	}
+	h3{
 	letter-spacing: 1px;
 	font-size: 24px;
 }
+
+}
+
 .section{
 	margin-bottom: 48px;
 }
@@ -187,24 +189,31 @@ h1, h2, h3{
     border-top: 4px solid rgb(61,108,176);
    clear: both;
 }
-.profile.section .title:after{
-	width:365px;
-}
-.contact.section .title:after{
-	width:348px;
-}
-.skills.section .title:after{
-	width:392px;
-}
-.experience.section .title:after{
-	width:342px;
-}
-.softwares.section .title:after{
-	width:361px;
-}
+//.profile.section .title:after{
+//	width:480px;
+//}
+//.contact.section .title:after{
+//	width:461px;
+//}
+//.skills.section .title:after{
+//	width:514px;
+//}
+//.education.section .title:after{
+//	width: 468px;
+//}
+//.experience.section .title:after{
+//	width:459px;
+//}
+//.softwares.section .title:after{
+//	width:484px;
+//}
 .contact{
 	margin-top: 23px;
     margin-bottom: 31px;
+	.text{
+	font-size: 23px;
+	display: inline-block;
+}
 }
 label{
 	font-size: 22px;
@@ -213,62 +222,57 @@ label{
 	color: @general_color;
 }
 
-.contact .text{
-	font-size: 23px;
-	display: inline-block;
-}
 .section .content{
 	padding-top: 7px;
 }
-.section.contact {
-	margin-bottom: 50px;
-}
+//.section.contact {
+//	margin-bottom: 50px;
+//}
 .skill{
 	text-align: center;
 	margin-bottom: 13px;
-}
-.skill .name{
+	.name{
 	font-size: 28px;
 	margin-top: 10px;
+}
 }
 
 .degree .name,.degree .time,.degree .circle{
 	letter-spacing: 1px;
 	display: inline-block;
 }
-.degree .time{
-	color: black;
-	font-weight: 100;
-	
-}
-.degree .info {
-	margin-left: 43px;
-	margin-bottom: -5px;
-
-}
-
-.degree .place {
-	font-size: 28px;
-	padding-top: 2px;
-}
-.section .degree {
+.degree{
 	margin-bottom: 14.7px;
     margin-left: 15px;
+	.time{
+	color: black;
+	font-weight: 100;
+	word-spacing: -1px;
+    font-size: 29px;
+    letter-spacing: 0px;
+	}
+	.info {
+	margin-left: 43px;
+	margin-bottom: -5px;
 }
-.degree .circle{
+.text{
+	padding-top: 7px;
+}
+.circle{
 	margin-top: 10px;
 	background: black;
 	width: 20px;
 	height:20px;
 	float:left;
 }
-.degree .time{
-	word-spacing: -1px;
-    font-size: 29px;
-    letter-spacing: 0px;
+ .place {
+	font-size: 28px;
+	padding-top: 2px;
 }
-.degree .text{
-	padding-top: 7px;
+.name{
+	font-size: 26px;
+}
+	
 }
 .software-table{
 	display: table;
@@ -276,52 +280,53 @@ label{
 	margin-left: 9px;
 }
 
-.job.degree .name{
+.job.degree{
+	 .name{
 	padding: 1px;
-}
-.job.degree .name,.job.degree .time{
-	color:black;
-}
-.experience.section .header{
-	margin-bottom: 29px;
-}
-.degree .name{
-	font-size: 26px;
-}
-.softwares.section{
-	padding-top: 8px;
-	font-size: 28px;
-}
-.job.degree .info{
+	color: black;
+	}
+	.time{
+	color: black;
+	}
+	 .info{
 	padding-top: 1px;
+	}
 }
+
+//.experience.section .header{
+//	margin-bottom: 29px;
+//}
+//
+//.softwares.section{
+//	padding-top: 8px;
+//	font-size: 28px;
+//}
+
 .software{
 	padding-left: 0px;
 	padding-bottom: 10px;
 	padding-top: 10px;
 
 }
-.experience.section .time{
-	padding-left: 12px;
-}
+//.experience.section{
+//	padding-top: 11px;
+//	.time{
+//	padding-left: 12px;
+//	}
+//}
 
-.experience.section{
-	padding-top: 11px;
-}
 .level{
 	height: 24px;
 	margin-top: 10px;
 	margin-bottom: 7px;
 	background: @gray;
-}
-
-.software .level .success {
+	.success{
 	width: 48%;
 	height: inherit;
 	background: @general_color;
 	display: inline-block;
+	}
 }
-
 
 
 .photoshop .level .success{
